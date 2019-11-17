@@ -21,7 +21,11 @@ const LoginForm = ({ isLoading, login }) => {
         <Logo />
         <form
           className='login-form'
-          onSubmit={() => login({ email, password })}
+          onSubmit={() => {
+            login({ email, password });
+            setEmail('');
+            setPassword('');
+          }}
         >
           <div className='form-control-group'>
             <input
