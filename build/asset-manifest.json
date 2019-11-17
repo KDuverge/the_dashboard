@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/the_dashboard/static/css/main.b5f05ab4.chunk.css",
+    "main.js": "/the_dashboard/static/js/main.28752f6c.chunk.js",
+    "main.js.map": "/the_dashboard/static/js/main.28752f6c.chunk.js.map",
+    "runtime~main.js": "/the_dashboard/static/js/runtime~main.69f57f8f.js",
+    "runtime~main.js.map": "/the_dashboard/static/js/runtime~main.69f57f8f.js.map",
+    "static/css/2.1d3f04dd.chunk.css": "/the_dashboard/static/css/2.1d3f04dd.chunk.css",
+    "static/js/2.acce12b0.chunk.js": "/the_dashboard/static/js/2.acce12b0.chunk.js",
+    "static/js/2.acce12b0.chunk.js.map": "/the_dashboard/static/js/2.acce12b0.chunk.js.map",
+    "index.html": "/the_dashboard/index.html",
+    "precache-manifest.ab28a9c0f87a83aaba25fb3319b011e9.js": "/the_dashboard/precache-manifest.ab28a9c0f87a83aaba25fb3319b011e9.js",
+    "service-worker.js": "/the_dashboard/service-worker.js",
+    "static/css/2.1d3f04dd.chunk.css.map": "/the_dashboard/static/css/2.1d3f04dd.chunk.css.map",
+    "static/css/main.b5f05ab4.chunk.css.map": "/the_dashboard/static/css/main.b5f05ab4.chunk.css.map",
+    "static/media/font-awesome.css": "/the_dashboard/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/notifications.css": "/the_dashboard/static/media/notification.c0d3c94c.eot"
+  }
+}
