@@ -1,0 +1,18 @@
+.fas {
+	font-size: 3rem;
+	color: #3caea3;
+}
+
+.arrow {
+	align-self: center;
+	transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+	transform: scale(1.1);
+}
+
+.coming-soon {
+	grid-row: 4 / span 2;
+	grid-column: 4 / span 2;
+}

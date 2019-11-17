@@ -1,0 +1,112 @@
+.tags-container {
+  box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.15);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30rem;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  transform: translateX(98%);
+  z-index: 10;
+}
+
+.tags-toggle-btn {
+  background-color: #173f5f;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-2rem, -50%);
+  cursor: pointer;
+}
+
+.tags-form-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tags-container.active {
+  transform: translateX(0);
+}
+
+.tags-form {
+  flex: 1;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.tags-text-input {
+  border: none;
+  border-bottom: 1px solid #3caea3;
+  outline: none;
+  transition: transform 0.2s ease;
+  text-transform: inherit;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+.tags-text-input:focus {
+  outline: none;
+  transform: translate(2px, 2px);
+}
+
+.tags-text-btn {
+  opacity: 0;
+  position: absolute;
+}
+
+.tags-toggle-btn i {
+  color: #fff;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease;
+}
+
+.tags-toggle-btn i.rotate {
+  transform: rotate(180deg);
+}
+
+.tags {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 5;
+  justify-content: center;
+  padding: 1rem;
+  width: 99%;
+}
+
+.tag {
+  background-color: #ed553b;
+  color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  width: 5rem;
+  position: relative;
+}
+
+.tag-close {
+  position: absolute;
+  top: -3px;
+  right: 5px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.main-container {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	font-size: 2rem;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+}
+
+.background {
+	background-color: #20639b;
+	grid-row: 1 / 5;
+	grid-column: 1 / -1;
+}

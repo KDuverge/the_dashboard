@@ -1,0 +1,6 @@
+.dashboard-container {
+  width: 150rem;
+  height: 80rem;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+}

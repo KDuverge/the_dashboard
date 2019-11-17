@@ -1,0 +1,36 @@
+.the-dashboard {
+  transform: rotate(-10deg);
+}
+
+path {
+  stroke: #fff;
+  fill: #fff;
+  stroke-dasharray: 9000;
+  stroke-miterlimit: 10;
+  stroke-width: 1;
+  transition: opacity 500ms ease;
+  animation: animate 3s cubic-bezier(0, 0.23, 1, 0.1) forwards;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 9000;
+  }
+
+  30% {
+    opacity: 1;
+    stroke-dashoffset: 9000;
+  }
+
+  90% {
+    opacity: 1;
+    fill: rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    fill: rgba(255, 255, 255, 1);
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}

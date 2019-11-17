@@ -1,0 +1,58 @@
+.modal-shroud {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  grid-row: 2 / span 6;
+  grid-column: 2 / span 6;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  display: flex;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.modal-shroud.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-shroud.show .modal-container {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-container {
+  background-color: #fff;
+  height: 30rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.modal-button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 5rem;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.modal-close-btn:hover {
+  color: #fff;
+}

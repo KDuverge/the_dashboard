@@ -1,0 +1,94 @@
+.dashboard-form-container {
+  grid-row: 2 / span 6;
+  grid-column: 2 / span 6;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  background-color: #ffffff;
+  text-align: center;
+  padding: 2rem 0;
+  border-radius: 5px;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.dashboard-form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-form-group input {
+  width: 45%;
+  border: none;
+  border-bottom: 1px solid #3caea3;
+  transition: transform 0.2s ease;
+}
+
+.dashboard-form-group input:not([type='file']) {
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.dashboard-form-group input:focus {
+  outline: none;
+  transform: translate(2px, 2px);
+}
+
+.dashboard-form-group.one {
+  grid-row: 1 / 2;
+  grid-column: 2 / span 6;
+}
+
+.dashboard-form-group.two {
+  grid-row: 3 / 4;
+  grid-column: 2 / span 6;
+}
+
+.file-input-container {
+  width: 45%;
+  border-bottom: 1px solid #3caea3;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.file-input-container label {
+  font-size: 1.4rem;
+  background-color: #3caea3;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+label.disabled {
+  background-color: #ccc;
+  cursor: initial;
+}
+
+.file-input-container input {
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+}
+
+.file-input-container span {
+  align-self: flex-end;
+  font-size: 1.2rem;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+textarea {
+  grid-row: 5 / 8;
+  grid-column: 2 / span 6;
+  border: 1px solid #3caea3;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+textarea:focus {
+  outline: none;
+}

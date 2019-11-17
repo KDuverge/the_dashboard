@@ -1,0 +1,28 @@
+.loader {
+  grid-row: 2 / span 6;
+  grid-column: 2 / span 6;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-container .loader {
+  box-shadow: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader i {
+  font-size: 8rem;
+  animation: rotate 1s linear infinite;
+}

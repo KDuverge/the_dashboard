@@ -1,0 +1,38 @@
+.single-project-container {
+	height: 15rem;
+	width: 15rem;
+	border: 2px solid #e3e3e3;
+	padding: 0.2rem;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.single-project-container:hover {
+	transform: scale(1.1);
+}
+
+.single-project-container:hover .single-project-title {
+	transform: translate(-50%, -50%);
+}
+
+.single-project-container:hover .single-project-image {
+	filter: blur(2px) opacity(0.5);
+}
+
+.single-project-image {
+	height: 100%;
+	width: 100%;
+	transition: all 0.3s ease;
+}
+
+.single-project-title {
+	font-size: 1.8rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 600%);
+	transition: transform 0.3s ease;
+	font-weight: bold;
+}
