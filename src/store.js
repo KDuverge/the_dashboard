@@ -4,11 +4,8 @@ import rootReducer from './redux/index';
 
 import thunk from 'redux-thunk';
 
-export const store = createStore(
-  rootReducer,
-  compose(
-    applyMiddleware(thunk),
-    window.__REDUX_DEVTOOLS_EXTENSION__ &&
-      window.__REDUX_DEVTOOLS_EXTENSION__(),
-  ),
-);
+const middleware = applyMiddleware(thunk);
+
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION__COMPOSE__ || compose;
+
+export const store = createStore(rootReducer, composeEnhancer(middleware));
